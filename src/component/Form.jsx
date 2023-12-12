@@ -54,16 +54,16 @@ export default function Form(props) {
       <button
         type="submit"
         className="btn btn-primary mx-2 my-2"
-        onClick={convertlo}
+        onClick={cleartxt}
       >
-        Convert To LowerCase
+        Clear Text
       </button>
       <button
         type="submit"
         className="btn btn-primary mx-2 my-2"
-        onClick={cleartxt}
+        onClick={convertlo}
       >
-        Clear Text
+        Convert To LowerCase
       </button>
       <button
         type="submit"
