@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <Navbar
-        tittle="PARTH"
+        tittle="Text-Converter"
         AboutUS="About US"
         mode={mode}
         toggleMode={toggleMode}
