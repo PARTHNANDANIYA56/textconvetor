@@ -36,14 +36,14 @@ export default function Form(props) {
       </div>
       <button
         type="submit"
-        className="btn btn-primary mx-2"
+        className="btn btn-primary mx-2 my-2"
         onClick={convertup}
       >
         Convert To UpperCase
       </button>
       <button
         type="submit"
-        className="btn btn-primary mx-2"
+        className="btn btn-primary mx-2 my-2"
         onClick={convertlo}
       >
         Convert To LowerCase
