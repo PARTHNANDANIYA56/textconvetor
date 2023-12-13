@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Aboutus = () => {
-  const [navbg, setMyStyle] = useState({
+  const [] = useState({
     color: "black",
     backgroundColor: "white",
   });
