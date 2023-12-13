@@ -17,10 +17,20 @@ export default function Form(props) {
     setText(newText);
     props.showAlert("All Clear!", "danger");
   };
-  const handleOnChange = (event) => {
-    console.log("on chage");
-    setText(event.target.value);
+    const handleOnChange = (event) => {
+      console.log("on chage");
+      setText(event.target.value);
+    };
+
+  const copytxt = () => {
+    console.log("I am copy");
+    let textElement = document.getElementById("mybox");
+    textElement.select();
+    textElement.setSelectionRange(0, 9999);
+    navigator.clipboard.writeText(textElement.value);
+    props.showAlert("Copy All Text","info");
   };
+
   const [Text, setText] = useState("");
   return (
     <>
@@ -36,20 +46,31 @@ export default function Form(props) {
       </div>
       <button
         type="submit"
-        className="btn btn-primary mx-2"
+        className="btn btn-primary mx-2 my-2"
         onClick={convertup}
       >
         Convert To UpperCase
       </button>
       <button
         type="submit"
-        className="btn btn-primary mx-2"
+        className="btn btn-primary mx-2 my-2"
+        onClick={cleartxt}
+      >
+        Clear Text
+      </button>
+      <button
+        type="submit"
+        className="btn btn-primary mx-2 my-2"
         onClick={convertlo}
       >
         Convert To LowerCase
       </button>
-      <button type="submit" className="btn btn-primary mx-2" onClick={cleartxt}>
-        Clear Text
+      <button
+        type="submit"
+        className="btn btn-primary mx-2 my-2"
+        onClick={copytxt}
+      >
+        Copy Text
       </button>
       <div className="container my-3">
         <h1>Text Summary</h1>
