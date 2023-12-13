@@ -8,7 +8,7 @@ const Aboutus = () => {
   const [] = useState("Enable light Mode");
 
   return (
-    <div class="accordion" id="accordionExample">
+    <div class="accordion mt-3" id="accordionExample">
       <h1>About Us</h1>
       <div class="accordion-item mt-4">
         <h2 class="accordion-header">
